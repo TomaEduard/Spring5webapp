@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+
+    <head>
+
+        <meta charset="UTF-8"/>
+        <title>Spring MVC</title>
+
+    </head>
+
+    <body>
+
+        <h1>Author(s) List</h1>
+
+        <table>
+            <tr>
+                <th>ID</th>
+                <th>First Name</th>
+                <th>Last Name</th>
+            </tr>
+
+            <!-- authors is the variable from AuthorController -->
+            <!-- for each element of this array, print element.id, .firstName and .lastName -->
+            <tr th:each="author : ${authors}">
+                <td th:text="${author.id}">123</td>
+                <td th:text="${author.firstName}">Test</td>
+                <td th:text="${author.lastName}">Test2</td>
+            </tr>
+        </table>
+
+    </body>
+
+</html>

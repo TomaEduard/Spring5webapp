@@ -78,10 +78,6 @@ public class Author {
     }
 
 
-<<<<<<< HEAD
-
-=======
->>>>>>> jpa-entities
     @Override
     public String toString() {
         return "Author{" +
